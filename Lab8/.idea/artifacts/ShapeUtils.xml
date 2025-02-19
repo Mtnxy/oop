@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ShapeUtils">
+    <output-path>$PROJECT_DIR$/out/artifacts/ShapeUtils</output-path>
+    <root id="archive" name="ShapeUtils.jar">
+      <element id="module-output" name="Lab8" />
+    </root>
+  </artifact>
+</component>
