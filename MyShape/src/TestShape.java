@@ -14,7 +14,7 @@ public class TestShape {
         triangle.inputParameter();
         System.out.println("Triangle base: "+ triangle.getBase()+" height: "+ triangle.getHeight());
         System.out.println("Triangle area: "+ triangle.getArea());
-
+    
         Rectangle rectangle = new Rectangle();
         System.out.println();
         rectangle.inputParameter();
