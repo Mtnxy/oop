@@ -53,8 +53,8 @@ public class ConversionForm extends TemperatureConversion {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    double C2k = Double.parseDouble(textField2.getText());
-                    double result = fahrenheitToCelsius(C2k);
+                    double C2k = Double.parseDouble(textField3.getText());
+                    double result = celsiusToKelvin(C2k);
                     displayResult("Celsius to Kevin", result + " °K", JOptionPane.INFORMATION_MESSAGE);
                 } catch (Exception err) {
                     displayResult("ERROR", "Please input numeric only", JOptionPane.ERROR_MESSAGE);
@@ -67,8 +67,8 @@ public class ConversionForm extends TemperatureConversion {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    double F2k = Double.parseDouble(textField3.getText());
-                    double result = fahrenheitToCelsius(F2k);
+                    double F2k = Double.parseDouble(textField4.getText());
+                    double result = fahrenheitToKelvin(F2k);
                     displayResult("Fahrenheit to Kevin", result + " °K", JOptionPane.INFORMATION_MESSAGE);
                 } catch (Exception err) {
                     displayResult("ERROR", "Please input numeric only", JOptionPane.ERROR_MESSAGE);
@@ -82,7 +82,7 @@ public class ConversionForm extends TemperatureConversion {
             public void actionPerformed(ActionEvent e) {
                 try {
                     double K2c = Double.parseDouble(textField5.getText());
-                    double result = fahrenheitToCelsius(K2c);
+                    double result = kelvinToCelsius(K2c);
                     displayResult("Kevin to Celsius", result + " °C", JOptionPane.INFORMATION_MESSAGE);
                 } catch (Exception err) {
                     displayResult("ERROR", "Please input numeric only", JOptionPane.ERROR_MESSAGE);
@@ -95,8 +95,8 @@ public class ConversionForm extends TemperatureConversion {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    double K2f = Double.parseDouble(textField5.getText());
-                    double result = fahrenheitToCelsius(K2f);
+                    double K2f = Double.parseDouble(textField6.getText());
+                    double result = kelvinToFahrenheit(K2f);
                     displayResult("Kevin to Fahrenheit", result + " °F", JOptionPane.INFORMATION_MESSAGE);
                 } catch (Exception err) {
                     displayResult("ERROR", "Please input numeric only", JOptionPane.ERROR_MESSAGE);

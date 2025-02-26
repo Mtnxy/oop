@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GeometricShapesUtil">
+    <output-path>$PROJECT_DIR$/out/artifacts/GeometricShapesUtil</output-path>
+    <root id="archive" name="GeometricShapesUtil.jar">
+      <element id="module-output" name="GeometricShapes" />
+    </root>
+  </artifact>
+</component>
