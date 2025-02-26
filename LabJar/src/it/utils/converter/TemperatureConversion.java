@@ -3,7 +3,7 @@ package it.utils.converter;
 public class TemperatureConversion implements TemperatureConverter{
     @Override
     public double celsiusToFahrenheit(double celsius) {
-        return (celsius*1.8)+32;
+        return (celsius * 1.8) + 32;
     }
 
     @Override
