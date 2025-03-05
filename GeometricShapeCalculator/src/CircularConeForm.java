@@ -53,8 +53,13 @@ public class CircularConeForm {
                 Double.parseDouble(textHeight.getText()));
         double volume = cc.getVolume(); // call calculate volume method for relative shape in JAR
         double slantHeight = cc.getSlantHeight(); // call calculate slant method for relative shape in JAR
-        double totalSurfaceArea = cc.getTotalSurfaceArea(); // call calculate total surface area method for relative shape in JAR
-        String result = "Volume = " + volume + "\n" + "Slant Height = " + slantHeight + "\n" + "Total Surface Area = " + totalSurfaceArea;
+        double LateralSurfaceArea = cc.getLateralSurfaceArea();
+        double BaseSurfaceArea =cc.getBaseSurfaceArea();
+        double totalSurfaceArea = cc.getTotalSurfaceArea();// call calculate total surface area method for relative shape in JAR
+
+        String result = "Volume = " + volume + "\n" + "Slant Height = "
+                + slantHeight + "\n" +"LateralSurfaceArea =" + LateralSurfaceArea+"\n"+
+                "BaseSurfaceArea ="+BaseSurfaceArea +"\n" + "Total Surface Area = " + totalSurfaceArea +"\n";
         displayResult(result, "Result of Circular Cone Shape", JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception e){
             displayResult("Please enter numeric only!","ERROR",JOptionPane.INFORMATION_MESSAGE);

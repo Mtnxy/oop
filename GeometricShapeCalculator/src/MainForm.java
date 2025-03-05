@@ -27,7 +27,6 @@ public class MainForm extends  JFrame{
             public void mouseClicked(MouseEvent e) {
                 openForm(MainForm.CIRCULARCONE);
             }
-
         });
         circularCylinderLabel.addMouseListener(new MouseAdapter() {
             @Override
@@ -41,9 +40,7 @@ public class MainForm extends  JFrame{
             public void mouseClicked(MouseEvent e) {
                 openForm(MainForm.RECTANGULARPRISM);
             }
-
         });
-
 
         circularConeButton.addActionListener(new ActionListener() {
             @Override
@@ -106,8 +103,6 @@ public class MainForm extends  JFrame{
         mainForm.pack();
         mainForm.setVisible(true);
     }
-
-
 }
 
 

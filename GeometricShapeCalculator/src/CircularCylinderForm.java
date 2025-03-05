@@ -1,4 +1,4 @@
-import it.util.shapes.CircularCone;
+
 import it.util.shapes.CircularCylinder;
 
 import javax.swing.*;
@@ -48,12 +48,16 @@ public class CircularCylinderForm {
         try{
 
 
-            CircularCylinder cc = new CircularCylinder(Double.parseDouble(textField1.getText()),
+            CircularCylinder cy = new CircularCylinder(Double.parseDouble(textField1.getText()),
                     Double.parseDouble(textField2.getText()));
-            double volume = cc.getVolume();
+            double volume = cy.getVolume();
+            double LateralSurfaceArea = cy.getLateralSurfaceArea();
+            double TopSurfaceArea = cy.getTopSurfaceArea();
+            double BottomSurfaceArea=cy.getBottomSurfaceArea();
 
-            double totalSurfaceArea = cc.getTotalSurfaceArea();
-            String result = "Volume = " + volume + "\n" +   "Total Surface Area = " + totalSurfaceArea;
+            double totalSurfaceArea = cy.getTotalSurfaceArea();
+            String result = "Volume = " + volume + "\n" + "LateralSurfaceArea ="+ LateralSurfaceArea +"\n"+"TopSurfaceArea ="
+                    +TopSurfaceArea +"\n"+ "TotalSurface Area = " + totalSurfaceArea+"\n";
             displayResult(result, "Result of Circular Cylinder Shape", JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception e){
             displayResult("Please enter numeric only!","ERROR",JOptionPane.INFORMATION_MESSAGE);

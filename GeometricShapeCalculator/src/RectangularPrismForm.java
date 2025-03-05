@@ -1,4 +1,4 @@
-import it.util.shapes.CircularCylinder;
+
 import it.util.shapes.RectangularPrism;
 
 import javax.swing.*;
@@ -47,14 +47,14 @@ public class RectangularPrismForm {
     public void doCalculate() {
         try{
 
-            RectangularPrism cc = new RectangularPrism(Double.parseDouble(textwidth.getText()),
+            RectangularPrism re = new RectangularPrism(Double.parseDouble(textwidth.getText()),
                     Double.parseDouble(textHeight.getText()),
                     Double.parseDouble(textlength.getText()));
 
-            double volume = cc.getVolume();
-
-            double totalSurfaceArea = cc.getTotalSurfaceArea();
-            String result = "Volume = " + volume + "\n" +   "Total Surface Area = " + totalSurfaceArea;
+            double volume = re.getVolume();
+            double SurfaceArea = re.getTotalSurfaceArea();
+            double Diagonal = re.getDiagonal();
+            String result = "Volume = " + volume + "\n" +   "Surface Area = " + SurfaceArea +"\n"+"Diagonal ="+Diagonal +"\n";
             displayResult(result, "Result of Rectangular Prism Shape", JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception e){
             displayResult("Please enter numeric only!","ERROR",JOptionPane.INFORMATION_MESSAGE);
