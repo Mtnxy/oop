@@ -51,6 +51,18 @@ public class MainForm extends  JFrame{
                 openForm(MainForm.CIRCULARCONE);
             }
         });
+        circularCylinderButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                openForm(MainForm.CIRCULARCYLINDER);
+            }
+        });
+        rectangularPrismButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                openForm(MainForm.RECTANGULARPRISM);
+            }
+        });
     }
     private void openForm(String formName) {
         switch (formName) {

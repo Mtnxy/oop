@@ -18,7 +18,7 @@ public class RectangularPrismForm {
 
     public RectangularPrismForm() {
         rectangularPrismLabel.setIcon(new ImageIcon(this.getClass().getResource("/resources/rectangularprism2.png")));
-        frame = new JDialog((Frame) null, "Circular Cylinder Shape Area", true);
+        frame = new JDialog((Frame) null, "Rectangular Prism Shape Area", true);
         frame.setContentPane(rectangularPrismPanel);
         frame.pack();
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
